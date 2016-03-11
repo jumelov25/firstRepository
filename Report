@@ -45,7 +45,7 @@ This are main steps of the algorithm proposed:
     18                          18
     14                          14
     20                          20
-    9                           9
+    9                           9 
 
 Here are the outputs of the Search Process for the best Dimensionality (Dim) to use (LSA order (%)) and its correspondent Error Rate (%):   
 
