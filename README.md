@@ -16,7 +16,7 @@ Text fragments (numbered 1 to N) from Set A, each on a new line (so a total of N
 A separator with five asterisk marks "*" which indicates the end of Set A and beginning of Set B. 
 Text fragments (numbered 1 to N) from Set B, each on a new line (so a total of N lines).
 
-Output Format 
+Output Format
 N lines, each containing one integer. 
 The i-th line should contain an integer j such that the i-th element of Set A and the j-th element of Set B are a pair, i.e., both originally came from the same block of text/Wikipedia article.
 
