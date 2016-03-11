@@ -4,12 +4,11 @@ In this repository you can find:
       1.1. Algorithm implementation
       1.2. Brief Report
       
-    2. Four examples of Codes written in C (by me and by my team here at VOCALIZE)
+    2. Three examples of Codes written in C (by me and by my team here at VOCALIZE)
       1.1 viterbiSearch (viterbi search for TTS unit selection)
       1.2 hmmTagger (PoS Tagger based on Hidden Markov Models)
       1.3 vad_Streaming (Voice Activity Detection for Streaming operation)
-      1.4 vad_Batch (Voice Activity Detection for Batch operation)
-
+      
 
 Here is the description of the NLP problem from Hackerrank. The name of the problem is: Stitch the Torn Wiki.  
 
