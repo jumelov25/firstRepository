@@ -1,6 +1,6 @@
 In this repository you can find:
 
-    1. Solution to a NLP problem from Hackerrank:
+    1. Solution to an NLP problem from Hackerrank:
       1.1. Algorithm implementation
       1.2. Brief Report
       
