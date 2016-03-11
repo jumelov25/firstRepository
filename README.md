@@ -1,6 +1,19 @@
-NLP: Stitch the Torn Wiki
+In this repository you can find:
 
-Here is the description problem ( extracted from: https://www.hackerrank.com/challenges/stitch-the-torn-wiki )
+    1. Solution to a NLP problem from Hackerrank:
+      1.1. Algorithm implementation
+      1.2. Breaf Report
+      
+    2. Four examples of Codes written in C (by me and by my team here at VOCALIZE)
+      1.1 viterbiSearch (viterbi search for TTS unit selection)
+      1.2 hmmTagger (PoS Tagger based on Hidden Markov Models)
+      1.3 vad_Streaming (Voice Activity Detection for Streaming operation)
+      1.4 vad_Batch (Voice Activity Detection for Batch operation)
+
+
+Here is the description problem of the NLP problem from Hackerrank. The name of the problem is: Stitch the Torn Wiki.  
+
+You can find bellow the original description of the problem that was extracted from: https://www.hackerrank.com/challenges/stitch-the-torn-wiki 
 
 Text blocks which are approximately 500 to 1000 words in length are picked up from N different Wikipedia articles. Every block of text has been picked up from a unique Wikipedia article, about a well known person or place.
 
