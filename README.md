@@ -2,7 +2,7 @@ In this repository you can find:
 
     1. Solution to a NLP problem from Hackerrank:
       1.1. Algorithm implementation
-      1.2. Breaf Report
+      1.2. Brief Report
       
     2. Four examples of Codes written in C (by me and by my team here at VOCALIZE)
       1.1 viterbiSearch (viterbi search for TTS unit selection)
