@@ -11,7 +11,7 @@ In this repository you can find:
       1.4 vad_Batch (Voice Activity Detection for Batch operation)
 
 
-Here is the description problem of the NLP problem from Hackerrank. The name of the problem is: Stitch the Torn Wiki.  
+Here is the description of the NLP problem from Hackerrank. The name of the problem is: Stitch the Torn Wiki.  
 
 You can find bellow the original description of the problem that was extracted from: https://www.hackerrank.com/challenges/stitch-the-torn-wiki 
 
