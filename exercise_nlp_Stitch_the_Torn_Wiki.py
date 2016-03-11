@@ -248,9 +248,9 @@ def main():
     # Please, uncomment these coming lines to visualize the search process (for the best result)  
         #print str(LSAorder*(100.0/(2*N))) + '% ' + ' : ' + str(error[i]) + '%'
     #print '\n'
-    #print '-------------------------------------------------------'
+    #print '--------------------------------------------------------'
     #print '   Best Solution: ' + bestSolution
-    #print '-------------------------------------------------------'
+    #print '--------------------------------------------------------'
     #print '\n'
     
     # Best result: It uses the best LSA Order searched
