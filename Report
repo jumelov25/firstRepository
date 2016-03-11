@@ -1,6 +1,11 @@
-This report describe the algorithm used to solve the NLP problem: Stitch the Torn Wiki
+This report describes the algorithm used to solve the NLP problem: Stitch the Torn Wiki
 
-This are main steps of the algorithm proposed:
+The Score obtained was: 95% of accuracy (either for a SVD Dimensionality Reduction of 5% or 70%). Its important to emphasize that:
+     . There some operations like Text Tokenization, Function Word removal, and geral cleaning that were not deeply implement;
+     . The algorithm have not implement any sort of morphological word decompostion that in some way can help to improve its accuracy;
+     . About the LSA (Latent Semantic Analysis) implemented, its is a very standard approach and it is possible that it can be improved.
+     
+Here are the main steps of the algorithm proposed:
 
     (1) Tokenization, Function Words removal and general cleaning; 
 
@@ -141,7 +146,6 @@ Here are the outputs of the Search Process for the best Dimensionality (Dim) to 
 97.5%  : 5%
 97.5%  : 5%
 100.0%  : 10%
-
 
 ----------------------------------------------------------------------------------------
    Best Solution: LSA order: 97.5% or 30%  which corresponds to an Error Rate of 5%
