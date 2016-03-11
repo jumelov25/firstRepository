@@ -1,0 +1,148 @@
+This report describe the algorithm used to solve the NLP problem: Stitch the Torn Wiki
+
+This are main steps of the algorithm proposed:
+
+    (1) Tokenization, Function Words removal and general cleaning; 
+
+    (2) Build a Dictionary with all the words from the Text (full text: all the Text Segments from Set_A + Set_B) and assign a value equal to zero to each word;
+ 
+    (3) Build a Dictionary for each Text Segment (It contains: all Words from the Text, but the Word Countings is done only for the correspondent Text Segment); 
+    dpSeg = dictionariesPerSegment(fwrText,fDic)
+
+    (4) Build a Matrix with the "Text Segment" Vectors from the Dictionaries built in (3)
+    
+    (5) Look for the LSA order (Rank of the Singular Value Decomposition) that gives the best result (best accuracy). It is searched from 0% to 90% of dimensionality reduction:
+    
+        (5.1) SVD decomposition: LrDTM = U S Vt (estimate the Low Rank Document Term Matrix)
+        
+        (5.2) Look for the Closest Text Segments via evaluating the Cosine Distance Meassure between "Text Segments"
+        
+        (5.3) Evaluate the results: Compare it with a reference 
+        
+        (5.4) Look for the best result LSA order that gives the lower Error
+        
+    (6) Reports the best resut
+    
+    Here is the Result obtained for the Text Input given as example:
+    
+    Expected    Obtained by the implemnent algorithm
+    8                           8
+    17                          17
+    5                           5
+    6                           6
+    4                           4
+    16                          16
+    1                           1
+    13                          13
+    15                          15
+    3                           3
+    2                           15
+    19                          19
+    12                          12
+    7                           7    
+    11                          11        
+    10                          10
+    18                          18
+    14                          14
+    20                          20
+    9                           9
+
+Here are the outputs of the Search Process for the best Dimensionality (Dim) to use (LSA order (%)) and its correspondent Error Rate (%):   
+
+(Dim)   (Error Rate)
+
+10.0%  : 75%
+10.0%  : 75%
+12.5%  : 55%
+12.5%  : 55%
+15.0%  : 40%
+15.0%  : 40%
+15.0%  : 40%
+17.5%  : 45%
+17.5%  : 45%
+20.0%  : 35%
+20.0%  : 35%
+20.0%  : 35%
+22.5%  : 35%
+22.5%  : 35%
+25.0%  : 30%
+25.0%  : 30%
+25.0%  : 30%
+27.5%  : 25%
+27.5%  : 25%
+30.0%  : 5%
+30.0%  : 5%
+30.0%  : 5%
+32.5%  : 10%
+32.5%  : 10%
+35.0%  : 10%
+35.0%  : 10%
+35.0%  : 10%
+37.5%  : 15%
+37.5%  : 15%
+40.0%  : 20%
+40.0%  : 20%
+40.0%  : 20%
+42.5%  : 10%
+42.5%  : 10%
+45.0%  : 10%
+45.0%  : 10%
+45.0%  : 10%
+47.5%  : 10%
+47.5%  : 10%
+50.0%  : 10%
+50.0%  : 10%
+50.0%  : 10%
+52.5%  : 10%
+52.5%  : 10%
+55.0%  : 10%
+55.0%  : 10%
+55.0%  : 10%
+57.5%  : 10%
+57.5%  : 10%
+60.0%  : 10%
+60.0%  : 10%
+60.0%  : 10%
+62.5%  : 10%
+62.5%  : 10%
+65.0%  : 10%
+65.0%  : 10%
+65.0%  : 10%
+67.5%  : 10%
+67.5%  : 10%
+70.0%  : 10%
+70.0%  : 10%
+70.0%  : 10%
+72.5%  : 10%
+72.5%  : 10%
+75.0%  : 10%
+75.0%  : 10%
+75.0%  : 10%
+77.5%  : 15%
+77.5%  : 15%
+80.0%  : 15%
+80.0%  : 15%
+80.0%  : 15%
+82.5%  : 15%
+82.5%  : 15%
+85.0%  : 15%
+85.0%  : 15%
+85.0%  : 15%
+87.5%  : 10%
+87.5%  : 10%
+90.0%  : 10%
+90.0%  : 10%
+90.0%  : 10%
+92.5%  : 10%
+92.5%  : 10%
+95.0%  : 10%
+95.0%  : 10%
+95.0%  : 10%
+97.5%  : 5%
+97.5%  : 5%
+100.0%  : 10%
+
+
+----------------------------------------------------------------------------------------
+   Best Solution: LSA order: 97.5% or 30%  which corresponds to an Error Rate of 5%
+----------------------------------------------------------------------------------------
